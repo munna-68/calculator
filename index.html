@@ -5,21 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <div class="profile">
-      <img src="profile.jpg" alt="Profile Picture">
-      <span class="username">munna-68</span>
+      <img src="./imgs/profile-pic.png" alt="Profile Picture">
       <a href="https://github.com/munna-68" target="_blank">
-          <img src="github-arrow.png" alt="GitHub Profile" class="github-icon">
+          <span class="username">munna-68</span>
+          <img src="./imgs/github-icon.png" alt="GitHub Profile" class="github-icon">
       </a>
   </div>
 </header>
 <main>
-    <h1>PureCalc</h1>
-    <p>Give it a try...</p>
-    <div class="calculator">
+  <div class="container">
+    <div class="left">
+      <h1>PureCalc</h1>
+      <p>Give it a try...</p>
+    </div>
+    <div class="right">
+      <div class="calculator">
         <div class="display"></div>
         <div class="buttons">
             <button>C</button>
@@ -44,9 +51,11 @@
             
             <button>0</button>
             <button>.</button>
-            <button>=</button>
+            <button class="equal-btn">=</button>
         </div>
     </div>
+    </div>
+  </div>
 </main>
  <script src="./script.js"></script>
 </body>

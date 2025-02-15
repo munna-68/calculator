@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    background: #F1F4F8;
+  }
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+a {
+    text-decoration: none;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 8rem;
+  width: 90rem;
+  height: 7.5rem;
+  flex-shrink: 0;
+}
+
+.username {
+  color: #506B9B;
+  font-family: "Josefin Sans";
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  margin: 0rem 1rem;
+}
+
+h1 {
+  color: #506B9B;
+  font-family: Chewy;
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+p {
+  color: #506B9B;
+  font-family: "Josefin Sans";
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+button {
+  color: #506B9B;
+  font-family: "Josefin Sans";
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 80vh;
+  margin-bottom: 3rem;
+  margin: 0.5rem 8rem;
+  width: 80vw
+}
+
+.calculator{
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.875rem;
+  background: #8198C2;
+  width: 36.25rem;
+  height: 49.0625rem;
+  flex-shrink: 0;
+  padding: 1rem;
+}
+
+button {
+  width: 7.625rem;
+  height: 5.4375rem;
+  flex-shrink: 0;
+  width: 7.625rem;
+  height: 5.4375rem;
+  flex-shrink: 0;
+  border-radius: 1.875rem;
+  background: #DDE8EF;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 buttons per row */
+  gap: 1rem;
+  background: #8198C2;
+}
+
+button:hover {
+  background-color: #BCDBEF;
+}
+
+button:active {
+  background-color: #70AED4;
+}
+
+.equal-btn {
+  grid-column: span 2;
+  width: 100%; 
+}
+
+.display {
+  width: 33.125rem;
+  height: 12rem;
+  flex-shrink: 0;
+  align-self: center;
+  border-radius: 1.875rem;
+  background: #D4E7F2;
+  margin: 1rem 1.5rem 2rem;
+}
+
+header {
+  border: 1px solid #3A498D;
+  margin-bottom: 4.25rem;
+}
