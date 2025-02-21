@@ -120,6 +120,7 @@ button:active {
   border-radius: 1.875rem;
   background: #D4E7F2;
   margin: 1rem 1.5rem 2rem;
+  position: relative;
 }
 
 header {
@@ -127,3 +128,29 @@ header {
   margin-bottom: 4.25rem;
 }
 
+.display-text {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 1rem;
+  color: #506B9B;
+  font-family: "Josefin Sans";
+}
+
+h2, h3 {
+  background-color: #D4E7F2;
+}
+
+h3 {
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+h2 {
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: right;
+}
