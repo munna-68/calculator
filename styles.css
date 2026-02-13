@@ -1,61 +1,87 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    background: #F1F4F8;
-  }
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background: #f1f4f8;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+body {
+  background: #f1f4f8;
+  overflow-x: hidden;
 }
 
 .profile {
   display: flex;
   align-items: center;
-  margin: 0.5rem 8rem;
-  width: 90rem;
-  height: 7.5rem;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0.5rem 1.25rem;
+  width: min(100%, 72rem);
+  height: auto;
   flex-shrink: 0;
 }
 
+.profile > img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile a {
+  display: flex;
+  align-items: center;
+}
+
+.github-icon {
+  width: 25%;
+  height: 25%;
+}
+
 .username {
-  color: #506B9B;
+  color: #506b9b;
   font-family: "Josefin Sans";
-  font-size: 2.25rem;
+  font-size: 1.2rem;
   font-style: normal;
-  font-weight: 100;
+  font-weight: 400;
   line-height: normal;
-  margin: 0rem 1rem;
+  margin: 0rem 0.5rem;
 }
 
 h1 {
-  color: #506B9B;
+  color: #506b9b;
   font-family: Chewy;
-  font-size: 6rem;
+  font-size: 3.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
 p {
-  color: #506B9B;
+  color: #506b9b;
   font-family: "Josefin Sans";
-  font-size: 2.25rem;
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
 button {
-  color: #506B9B;
+  color: #506b9b;
   font-family: "Josefin Sans";
-  font-size: 2.25rem;
+  font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -64,84 +90,93 @@ button {
 .container {
   display: flex;
   justify-content: space-between;
-  height: 80vh;
-  margin-bottom: 3rem;
-  margin: 0.5rem 8rem;
-  width: 80vw
+  align-items: flex-start;
+  gap: 2rem;
+  margin: 0 auto;
+  padding: 0 1.25rem 1.5rem;
+  width: min(100%, 72rem);
 }
 
-.calculator{
+.left {
+  padding-top: 1rem;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.calculator {
   display: flex;
   flex-direction: column;
-  border-radius: 1.875rem;
-  background: #8198C2;
-  width: 36.25rem;
-  height: 49.0625rem;
+  border-radius: 1.25rem;
+  background: #8198c2;
+  width: min(100%, 24rem);
+  height: auto;
   flex-shrink: 0;
-  padding: 1rem;
+  padding: 0.75rem;
 }
 
 button {
-  width: 7.625rem;
-  height: 5.4375rem;
+  width: 100%;
+  height: 3.75rem;
   flex-shrink: 0;
-  width: 7.625rem;
-  height: 5.4375rem;
-  flex-shrink: 0;
-  border-radius: 1.875rem;
-  background: #DDE8EF;
+  border-radius: 1rem;
+  background: #dde8ef;
 }
 
 .buttons {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 buttons per row */
-  gap: 1rem;
-  background: #8198C2;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.65rem;
+  background: #8198c2;
 }
 
 button:hover {
-  background-color: #BCDBEF;
+  background-color: #bcdbef;
 }
 
 button:active {
-  background-color: #70AED4;
+  background-color: #70aed4;
 }
 
 .equal-btn {
   grid-column: span 2;
-  width: 100%; 
+  width: 100%;
 }
 
 .display {
-  width: 33.125rem;
-  height: 12rem;
+  width: 100%;
+  height: 8rem;
   flex-shrink: 0;
   align-self: center;
-  border-radius: 1.875rem;
-  background: #D4E7F2;
-  margin: 1rem 1.5rem 2rem;
+  border-radius: 1rem;
+  background: #d4e7f2;
+  margin: 0 0 1rem;
   position: relative;
 }
 
 header {
-  border: 1px solid #3A498D;
-  margin-bottom: 4.25rem;
+  border: 1px solid #3a498d;
+  margin-bottom: 1.25rem;
 }
 
 .display-text {
   position: absolute;
-  right: 1.5rem;
-  bottom: 1rem;
-  color: #506B9B;
+  right: 1rem;
+  bottom: 0.75rem;
+  color: #506b9b;
   font-family: "Josefin Sans";
 }
 
-h2, h3 {
-  background-color: #D4E7F2;
+h2,
+h3 {
+  background-color: #d4e7f2;
 }
 
 h3 {
-  font-size: 2.25rem;
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -149,9 +184,73 @@ h3 {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   text-align: right;
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  .left {
+    text-align: center;
+    padding-top: 0.5rem;
+  }
+
+  .right {
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .profile {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .username {
+    font-size: 1rem;
+  }
+
+  .calculator {
+    width: min(100%, 20rem);
+  }
+
+  button {
+    height: 3.25rem;
+    font-size: 1.2rem;
+  }
+
+  .display {
+    height: 6.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    padding: 0 0.75rem 1rem;
+  }
+
+  .calculator {
+    width: 100%;
+  }
 }
